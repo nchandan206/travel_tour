@@ -1,1 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0.4,0,0,0.4),rgba(0.4,0,0,0.4)),url(4K-Travel-Wallpaper-High-Quality.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    /* background-color: aqua; */
+}
+#yellow{
+    font-family:cursive;
+    font-size: 40px;
+    color: rgb(123, 198, 25);
+}
+#blue{
+    font-family: cursive;
+    font-size: 40px;
+    color: rgb(10, 123, 133);
+}
 
+.form-box{
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    padding: 24px 54px 60px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.form-box h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: #a05300;
+    position: relative;
+}
+.form-box h1::after{
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: #a05300;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.input-field{
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+}
+.input-field i{
+    margin-left: 15px;
+    color: #999;
+}
+form p{
+    text-align: left;
+    font-size: 13px;
+    /* color:#a05300; */
+    /* display: contents; */
+}
+form p a{
+    text-decoration: none;
+    color: #a05300;
+}
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-field button{
+    flex-basis: 48%;
+    background: #a05300;
+    color: #fff;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+.input-group{
+    height: 280px;
+    /* margin-bottom: 20px; */
+}
+
+.btn-field button.disable{
+    background: #eaeaea;
+    color: #555;
+}
+#foricon{
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+.social-ion{
+    size: 20px;
+}
+#moreways{
+    font-size: 10px;
+    margin: 5px;
+}
