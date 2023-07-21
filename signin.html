@@ -1,1 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in and Sign up Page</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <h2><span id="yellow">My T</span><span id="blue">rip</span></h1>
+        <!-- <button id="mode">Mode</button> -->
+        <div class="form-box">
+            <h1 id="title">Sign Up</h1>
+            <form>
+                <div class="input-group">
+                    <div class="input-field" id="namefield">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" placeholder="Enter Your Name">
+                    </div>
 
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="text" placeholder="Enter Your Email">
+
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Enter Your Password">
+                    </div>
+                    <!-- <div class="input-field" id="passwordfield">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="Confirm Your Password">
+                    </div> -->
+                    <p id="forget">Forget password..<a href="#">Click Here!</a></p>
+                    <!-- <p id="forget">I agree to the terms and services</p> -->
+
+                </div>
+                <div class="btn-field">
+                    <button type="button" id="signupBtn">Sign up</button>
+                    <button type="button" id="signinBtn" class="disable">Sign In</button>
+
+                </div>
+                
+                  <div id="foricon">
+                    <!-- facebook link -->
+                    <a href="https://www.facebook.com/ " target="_blank"  class="social-icon"><i class="fa-brands fa-facebook fa-beat" style="color: #224c96;"></i></a>
+                    <!-- twitter link -->
+                    <a href="https://twitter.com/i/flow/login?redirect_after_login=%2F%3Flang%3Den-in" target="_blank" class="social-icon"><i class="fa-brands fa-twitter fa-fade" style="color: #1d9ab9;"></i> </a>
+                    <!-- instagram link -->
+                    <a href="https://www.instagram.com/" target="_blank" class="social-icon"><i class="fa-brands fa-instagram fa-beat" style="color: #b87619;"></i></a>
+                    <!-- whatsapp link -->
+                    <a href="https://web.whatsapp.com/" target="_blank" class="social-icon"><i class="fa-brands fa-whatsapp fa-fade" style="color: #1f5121;"></i> </a>
+                  <div>
+                    
+                  
+            </form>
+            <div id="moreways">
+                <h3>More ways To Sign in..</h3>
+            </div>
+        </div>
+    </div>
+    <script>
+        let signupBtn=document.getElementById("signupBtn");
+        let signinBtn=document.getElementById("signinBtn");
+        let namefield=document.getElementById("namefield");
+        // let passwordfield=document.getElementById("passwordfield");
+        let title=document.getElementById("title");
+        let forget=document.getElementById("forget")
+
+        signinBtn.onclick= function(){
+            namefield.style.maxHeight="0";
+            title.innerHTML="Sign In";
+            forget.style.display="";
+            signupBtn.classList.add("disable");
+            signinBtn.classList.remove("disable");
+        }
+
+        signupBtn.onclick= function(){
+            namefield.style.maxHeight="60px";
+            title.innerHTML="Sign Up";
+            forget.style.display="none";
+            signupBtn.classList.remove("disable");
+            signinBtn.classList.add("disable");
+        }
+
+
+    </script>
+    
+</body>
+</html>
