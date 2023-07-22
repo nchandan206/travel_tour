@@ -5,40 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>wanderlust.com</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="homepage.css">
 
 </head>
-<body>
+<body onload="typing()">
 <!-- header section starts  -->
 
 <header>
     
-
     <a href="#" class="logo"><span>Wander</span>Lust</a>
 
     <nav class="navbar">
         <a href="#home">home</a>
-        <a href="#book">book</a>
+        <a href="#booknow">booknow</a>
         <a href="#packages">packages</a>
-        <a href="#services">services</a>
-        <a href="#gallery">gallery</a>
-        <a href="#review">review</a>
+        <a href="#s">services</a>
+        <a href="#offer">Cupons</a>
+        <a href="#review">memory</a>
         <a href="#contact">contact</a>
     </nav>
 
     <div class="icons">
         <i class="fas fa-search" id="search-btn"></i>
-        <i class="fas fa-user" id="login-btn"></i>
-    </div>
+        <i class="fa-solid fa-right-from-bracket" id="login-btn" onclick="logout()" ></i>
+        <i class="fa-solid fa-moon" id="dark-btn" onclick="darkmod()"></i>
+
+
+     </div>
    
 
 </header>
-<!-- video part start -->
-<section class="home" id="home">
 
+<section class="home" id="home">
+<h1><span style="color: rgb(250, 166, 10);">M</span>yTr<span style="color: rgb(250, 126, 10);">ip</span></h1>
     <div class="content">
-        <h3>Wanderlust CSR Pvt ltd</h3>
+        <h3 id="typingeffect"></h3>
         <p>Reinvent tarvel tour experience</p>
         <a href="#" class="btn">discover more</a>
     </div>
@@ -46,20 +48,42 @@
 
 
     <div class="video-container">
-        <video src="./vid1.mp4" id="video-slider" loop autoplay muted></video>
+        <video src="images/vid-1.mp4" id="video-slider" loop autoplay muted></video>
     </div>
 
 </section>
+<hr>
+<br><br>
 
 
 <section class="packages" id="packages">
-    <div class="title">
-        <h2 >Best Pakages of WanderHub</h2>
-    </div>
+    <!-- <div class="title">
+        <h2 >Best Pakages <br>of WanderHub</h2>
+    </div> -->
+    <section class="service" id="services">
+        <h1 class="heading">
+            <span>T</span>
+            <span>r</span>
+            <span>e</span>
+            <span>d</span>
+            <span>i</span>
+            <span>n</span>
+            <span>g</span>
+            <i> &#160 </i>
+            <span>p</span>
+            <span>a</span>
+            <span>c</span>
+            <span>k</span>
+            <span>a</span>
+            <span>g</span>
+            <span>e</span>
+        </h1>
+        </section>
+        <br><br>
     <div class="box">
 
         <div class="box1">
-            <img src="./p-1.jpg" alt="">
+            <img src="images/p-1.jpg" alt="">
             <div class="content1">
                 <h3> <i class="fas fa-map-marker-alt"></i>Ladakh</h3>
                 <p>
@@ -78,7 +102,7 @@
         </div>
 
         <div class="box1">
-            <img src="./p-2.jpg" alt="">
+            <img src="images/p-2.jpg" alt="">
             <div class="content1">
                 <h3> <i class="fas fa-map-marker-alt"></i>Himachal</h3>
                 <p>Himachal Pradesh is famous for its beautiful views and 
@@ -98,7 +122,7 @@
         </div>
 
         <div class="box1">
-            <img src="./p-3.jpg" alt="">
+            <img src="images/p-3.jpg" alt="">
             <div class="content1">
                 <h3> <i class="fas fa-map-marker-alt"></i> Gujarat </h3>
                 <p>Gujarat is renowned for its beaches, temples and historic glimps. 
@@ -118,7 +142,7 @@
         </div>
 
         <div class="box1">
-            <img src="./p-4.jpg" alt="">
+            <img src="images/p-4.jpg" alt="">
             <div class="content1">
                 <h3> <i class="fas fa-map-marker-alt"></i> Odisha </h3>
                 <p>Odisha is famous for its heritage and nature. 
@@ -139,7 +163,7 @@
         </div>
 
         <div class="box1">
-            <img src="./p-5.jpg" alt="">
+            <img src="images/p-5.jpg" alt="">
             <div class="content1">
                 <h3> <i class="fas fa-map-marker-alt"></i> Karnataka </h3>
                 <p>Karnataka is known for its Heritage destinations and its 
@@ -156,7 +180,7 @@
         </div>
 
         <div class="box1">
-            <img src="./p-6.jpg" alt="">
+            <img src="images/p-6.jpg" alt="">
             <div class="content1">
                 <h3> <i class="fas fa-map-marker-alt"></i> Lakshadweep </h3>
                 <p>Lakshadweep, the group of 36 islands is known for its exotic and 
@@ -170,7 +194,7 @@
                     <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
                 </div>
-                <div class="price"> ₹32999.00 <span><del>37000</sp</del>an> </div>
+                <div class="price"> ₹32999.00 <span><del>37000.00</span></del></div>
                 <a href="#" class="btn">book now</a>
             </div>
 
@@ -179,10 +203,255 @@
     </div>
 
 </section>
+<br><br>
+
+<section class="service" id="services">
+    <h1 class="heading">
+        <span>s</span>
+        <span>e</span>
+        <span>r</span>
+        <span>v</span>
+        <span>i</span>
+        <span>c</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+    <br><br>
+
+   <div class="service-container">
+    <div class="box" id="s">
+        <i class="fas fa-hotel"></i>
+        <h3>affordable hotels</h3>
+        <p>Come, stay and enjoy your day.
+            <br> We provide you best hotel with afforable orice ranges.
+        </p>
+    </div>
+    <div class="box">
+        <i class="fas fa-utensils"></i>
+        <h3>food and beverages</h3>
+        <p>Your belly knows best.
+            <br>Food according to your requirements anytime anywhere.
+        </p>
+    </div>
+    <div class="box">
+        <i class="fas fa-bullhorn"></i>
+        <h3>Privacy</h3>
+        <p>We safeguard your privacy.
+            <br>We ensure your joirney to be safe and secure with insurance policy.
+        </p>
+    </div>
+    <div class="box">
+        <i class="fas fa-globe-asia"></i>
+        <h3>around the world</h3>
+        <p>Adventure awaits, go find it.
+            <br>We have conections to every part of world. 
+        </p>
+    </div>
+    <div class="box">
+        <i class="fas fa-plane"></i>
+        <h3>fast and easy accomodation</h3>
+        <p>Anything, Anytime, Anywhere, Professionally.
+            <br>We provide huge range of accomodation as for your need.
+        </p>
+    </div>
+    <div class="box">
+        <i class="fas fa-hiking"></i>
+        <h3>adventures with guides</h3>
+        <p>It's bad manners to let vacation wait!
+            <br>We can provide you local Professional guides and 
+            give you best travel plans connecting all places.
+        </p>
+    </div>
+    </div>
+
+</section>
+<br><br>
+<!-- sponsered by -->
+
+<section class="service" id="sponser">
+    <h1 class="heading">
+        <span>S</span>
+        <span>p</span>
+        <span>o</span>
+        <span>n</span>
+        <span>s</span>
+        <span>e</span>
+        <span>r</span>
+        <span>e</span>
+        <span>d</span>
+        <i> &#160 </i>
+        <span>b</span>
+        <span>y</span>
+    </h1>
+    </section>
+    <br><br>
+
+    <section class="sponser"> 
+        <div class="sponser-company">
+            
+                <img src="/images/1.png" alt="">
+                <img src="/images/5.png" alt="">
+                <img src="/images/3.png" alt="">
+                 <img src="/images/4.png" alt="">
+
+        </div>
+
+    </section>
+    <!-- OFFER -->
+    <br><br>
+
+    <section class="service" id="offer">
+        <h1 class="heading">
+            <span>D</span>
+            <span>I</span>
+            <span>W</span>
+            <span>A</span>
+            <span>L</span>
+            <i> &#160 </i>
+            <span>C</span>
+            <span>U</span>
+            <span>P</span>
+            <span>O</span>
+            <span>N</span>
+        </h1>
+    </section>
+    <br><br>
+
+   
+    
+    <section class="offer">
+        <div class="coupon">
+            <div class="coupon-container">
+              <h3>CSR Logo</h3>
+            </div>
+            <img src="./purple-open-gift-box-with-voucher-bonus-surprise-minimal-present-greeting-celebration-promotion-discount-sale-reward-icon-3d-illustration.jpg" alt="Avatar" height="100px",width="200px">
+            <div class="coupon-container" style="background-color:white">
+              <h2><b>50% OFF</b></h2> 
+              <p>only for new customer</p>
+            </div>
+             <div class="coupon-container1">
+              <p>Use Promo Code: <span class="promo">COH232</span></p>
+              <p class="expire">Expires: august 03, 2021</p>
+            </div>
+        </div>
+        
+        <div class="coupon">
+            <div class="coupon-container">
+              <h3>CSR Logo</h3>
+            </div>
+            <img src="./purple-open-gift-box-with-voucher-bonus-surprise-minimal-present-greeting-celebration-promotion-discount-sale-reward-icon-3d-illustration.jpg" alt="Avatar" height="100px",width="200px">
+            <div class="coupon-container" style="background-color:white">
+              <h2><b>20% OFF</b></h2> 
+              <p>only for Hoeymontrip</p>
+            </div>
+            <div class="coupon-container1">
+              <p>Use Promo Code: <span class="promo">MOH232</span></p>
+              <p class="expire">Expires: august 03, 2023</p>
+            </div>
+        </div>
+        
+        <div class="coupon">
+            <div class="coupon-container">
+              <h3>CSR Logo</h3>
+            </div>
+            <img src="./purple-open-gift-box-with-voucher-bonus-surprise-minimal-present-greeting-celebration-promotion-discount-sale-reward-icon-3d-illustration.jpg" alt="Avatar" height="100px",width="200px">
+            <div class="coupon-container" style="background-color:white">
+              <h2><b>25% OFF</b></h2> 
+              <p>only for religioustip</p>
+            </div>
+            <div class="coupon-container1">
+              <p>Use Promo Code: <span class="promo">NOH232</span></p>
+              <p class="expire">Expires: august 03, 2021</p>
+            </div>
+        </div>
+        <div class="coupon">
+            <div class="coupon-container">
+              <h3>CSR Logo</h3>
+            </div>
+            <img src="./purple-open-gift-box-with-voucher-bonus-surprise-minimal-present-greeting-celebration-promotion-discount-sale-reward-icon-3d-illustration.jpg" alt="Avatar" height="100px",width="200px">
+            <div class="coupon-container" style="background-color:white">
+              <h2><b>35% OFF</b></h2> 
+              <p>only for student</p>
+            </div>
+            <div class="coupon-container1">
+              <p>Use Promo Code: <span class="promo">NOH8932</span></p>
+              <p class="expire">Expires: august 03, 2021</p>
+            </div>
+        </div>
+        <div class="coupon">
+            <div class="coupon-container">
+              <h3>CSR Logo</h3>
+            </div>
+            <img src="./purple-open-gift-box-with-voucher-bonus-surprise-minimal-present-greeting-celebration-promotion-discount-sale-reward-icon-3d-illustration.jpg" alt="Avatar" height="100px",width="200px">
+            <div class="coupon-container" style="background-color:white">
+              <h2><b>25% OFF</b></h2> 
+              <p>only for internationaltrip</p>
+            </div>
+            <div class="coupon-container1">
+              <p>Use Promo Code: <span class="promo">NOui32</span></p>
+              <p class="expire">Expires: august 03, 2021</p>
+            </div>
+        </div>
+          
+</section>
+
+
+<!-- footer part -->
+
+<br><br>
+
+<section class="footer">
+
+    <div class="box-footer">
+        <div class="box3">
+            <h3 id="contact">Contact</h3>
+            <br>
+            <p> <a href="tel:+917847966576"> <i class="fa-solid fa-phone-volume"></i></a>
+                <a href="mailto:nchandan206@gmail.com"><i class="fa-solid fa-envelope"></i></a></p>
+        </div>
+        <div class="box3">
+            <h3>Dowload app</h3>
+            <br>
+            <p><i class="fa-solid fa-cart-arrow-down" style="color: rgb(235, 239, 236);"></i></p>
+        </div>
+        <div class="box3">
+            <h3>branch locations</h3>
+            <a href="#">india</a>
+            <a href="#">USA</a>
+            <a href="#">nepal</a>
+            <a href="#">bangladesh</a>
+        </div>
+        <div class="box3">
+            <h3>quick links</h3>
+            <a href="#">Home</a>
+            <a href="#">book</a>
+            <a href="#">packages</a>
+            <a href="#">services</a>
+            <a href="#">gallery</a>
+            <a href="#">review</a>
+            <a href="#">contact</a>
+        </div>
+        <div class="box3">
+            <h3>Social media </h3>
+            <a href="#">facebook</a>
+            <a href="#">instagram</a>
+            <a href="#">twitter</a>
+            <a href="#">linkedin</a>
+        </div>
+
+    </div>
+    <hr><hr>
+
+    <h1 class="credit"> Made by <span style="color: rgb(29, 91, 121);"> CSR </span> | BOOKING.COM </h1>
+
+</section>
 
 
 
 
-</div>
+
+<script src="./homepage.js"></script>
+
+
 </body>
 </html>
