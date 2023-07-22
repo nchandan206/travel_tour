@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my booking</title>
+    <!-- link for css -->
+    <link rel="stylesheet" href="./mybooking.css">
+    <!-- link for font-awesome cndj -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- header section starts  -->
+
+<header>
+    <!-- <a href="#" class="logo">My Trip</a> -->
+    <h3><span>My</span> trip<i class="fa-solid fa-plane fa-beat"></i></h3>
+        <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#">Packages</a>
+        <!-- <ul class="dropdown">
+            <li><a href="#">puri</a>
+            </li>
+            <li><a href="#">goa</a></li>
+            <li><a href="#">goa</a></li>
+            <li><a href="#">goa</a></li>
+            <li><a href="#">goa</a></li>
+            <li><a href="#">goa</a></li>
+        </ul> -->
+        <a href="#book">Book</a>
+        <a href="#contact">Contact </a>
+        
+    </nav>
+
+    <div class="icons">
+        <i class="fa-solid fa-right-from-bracket" id="login-btn" onclick="logout()" ></i>
+        <i class="fa-solid fa-moon" id="dark-btn" onclick="darkmod()"></i>
+     </div>
+</header>
+
+<!-- header part completed -->
+
+<!-- content part -->
+<div class="heading">
+
+</div>
+<!-- BOOK ING SECTION START -->
+<section class="booking" id="book">
+    <h1 class="heading-title">Book Your Trip</h1>
+    <form class="book-form">
+    <div class="flex">
+        <div class="inputbox">
+            <span>Name:</span>
+            <input type="text" placeholder="Enter your name" name="name" required>
+        </div>
+
+        <div class="inputbox">
+            <span>Email:</span>
+            <input type="email" placeholder="Enter your email" name="email" required>
+        </div>
+
+        <div class="inputbox">
+            <span>Phone no:</span>
+            <input type="number" placeholder="Enter your phone no" name="phone" required>
+        </div>
+
+        <div class="inputbox">
+            <span>Address:</span>
+            <input type="text" placeholder="Enter your address" name="address" required>
+        </div>
+
+        <div class="inputbox">
+            <span>Where To:</span>
+            <input type="text" placeholder="Place You want to visit" name="location" required>
+        </div>
+
+        <div class="inputbox">
+            <span>How many:</span>
+            <input type="number" placeholder="Number of guest" name="guest" required>
+        </div>
+        <div class="inputbox">
+            <span>Arrivals:</span>
+            <input type="date" name="arrivals" required>
+        </div>
+
+        <div class="inputbox">
+            <span>leaving:</span>
+            <input type="date"  name="leaving" required>
+        </div>
+
+        <div class="inputbox">
+            <span id="coupons">coupons applied:</span>
+            <select>
+                <option value="none">none</option>
+                <option value="honey">HONEYMOON20</option>
+                <option value="stu">STUDENT18</option>
+                <option value="second">2ND USER</option>
+                <option value="first">FIRST USER</option>
+                <option value="team">CSR</option>
+            </select>
+            
+        </div>
+    </div>
+    <input type="submit" value="submit" class="btn" name="send">
+    </form>
+</section>
+    <!-- content completed -->
+    
+
+
+    <!-- starting of footer -->
+    <footer id="contact">
+        <div class="footer-content">
+          
+          <div class="footer-contact">
+            <h3>Contact Us</h3><br>
+            <pre><i class="fa-solid fa-envelope fa-beat" style="color: #1d9082;"></i> Email: info@CSRbooking.com</pre>
+            <pre><i class="fa-solid fa-phone fa-shake" style="color: #125809;"></i> Phone: +1 (123) 456-7890</pre>
+            <pre><i class="fa-solid fa-address-book fa-beat" style="color: #bbc62a;"></i> Address: 123 Main Street,City,Country</pre><br>
+          </div>
+        </div>
+        <hr>          
+          <div id="icon_footer">
+            <div id="foricon">
+            <!-- facebook link -->
+            <a href="https://www.facebook.com/ " target="_blank"  class="social-icon"><i class="fa-brands fa-facebook fa-beat" style="color: #2254aa;"></i></a>
+            <!-- twitter link -->
+            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2F%3Flang%3Den-in" target="_blank" class="social-icon"> <i class="fa-brands fa-twitter fa-beat" style="color: #1679c5;"></i> </a>
+            <!-- instagram link -->
+            <a href="https://www.instagram.com/" target="_blank" class="social-icon"><i class="fa-brands fa-instagram fa-beat" style="color: #9e551a;"></i></a>
+            <!-- whatsapp link -->
+            <a href="https://web.whatsapp.com/" target="_blank" class="social-icon"><i class="fa-brands fa-whatsapp fa-beat" style="color: #31970c;"></i> </a>
+          <div>
+            <br>
+        copyright &#169;2023 CSR BOOKING Pvt.Lt      <br>                                         
+           webdesign and create by CSRbooking.com
+          </div>
+          <br>
+          
+           <div id="center"> Creater By:-<span style="color:black"> WANDERS HUB</span> <i class="fa-solid fa-heart fa-flip" style="color: #e71313;"></i> </div>
+      </footer>
+    <!-- detail and footer ending -->
+</body>
+</html>
