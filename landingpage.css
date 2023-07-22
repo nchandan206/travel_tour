@@ -3,7 +3,20 @@ margin: 0;
 /* color: white; */
 box-sizing: border-box;
 font-family:sans-serif;}
-
+/* for dark mood */
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
+li i {
+    /* margin-left: 10px; */
+    color: white;
+    font-size: 30px;
+   
+  }
+  li i:hover{
+    color: #e18a18;
+  }
 .background{
     width: 100%;
     height: 100vh;
@@ -19,11 +32,29 @@ font-family:sans-serif;}
     position: absolute;
     top: 0;
     left: 0;
-    padding: 20px 8%;
+    padding: 10px 8%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: fixed;
+    background-color: black;
+    z-index: 1;
+    
+}
+header h3{
+    color: aliceblue;
+    font-size: 30px;
+    font-family:sans-serif;
+}
+#navbar h3 i{
+    font-size: 25px;
+    margin-left: 15px;
+    color: rgb(205, 123, 24);
+}
+
+#navbar h3 span{
+    color: rgb(205, 123, 24);
+    font-family: sans-serif;
 }
 #IMG{
     width: 140px;
@@ -47,6 +78,21 @@ nav ul li a:hover{
 
 }
 #btn{
+    border-radius: 50px;
+    color:black;
+    background-color: #d77e1e;
+    border: 2px solid hsl(32, 22%, 88%);
+    font-size: 15px;
+}
+nav ul li #btn1:hover{
+    text-decoration: none;
+    background-color: #ebf5f1;
+    color: #e18a18;
+
+}
+
+#btn{
+    background-color: #ebf5f1;
     color: #e18a18;
     font-size: 15px;
     border: 2px solid #d77e1e;
@@ -60,6 +106,7 @@ nav ul li a:hover{
     border-color: #fff ;
     border-width: 3px;
     font-size: large;
+    text-decoration: none;
 }
 .headline{
     text-align: center;
@@ -90,6 +137,7 @@ font-family: 'Times New Roman', Times, serif;
     margin-top: 20px;
     transition: .5;
 }
+
 #letstart_btn:hover{
     border: 2px solid #d77e1e;
     padding: 14px 70px;
@@ -385,48 +433,38 @@ font-family: 'Times New Roman', Times, serif;
 /* contact us part end */
 
 
-
-
-/* footer part */
+/* starting of footer */
 footer{
-    background-color:#d77e1e;
+    margin-top: 90px;
+    background-color:#c1aea0ea;
 
 }
 .footer-content{
     text-align: center;
+    font-size: 25px;
 }
 #center{
     text-align: center;
 }
 #icon_footer{
-    margin-left: 560px;
+    margin-left: 500px;
     margin-right: 20px;
     display: flex;
     justify-content: space-between;
     padding: 20px;
     text-align: center;
     /* width: 500px; */
-    
+    font-size: 25px;
 }
 .social-icon{
     color: #ebf5f1;
-    font-size: 24px;
+    font-size: 40px;
     margin-right: 50px;
     text-align: left;
     
 
 }
-
-
-
-
-
-
-
-
-
-
-
+/* ending of footer*/
 
 /* media queries
 @media(max-width:991px)
