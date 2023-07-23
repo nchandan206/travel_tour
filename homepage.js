@@ -48,3 +48,49 @@ function darkmod()
    window.location.href='./landingpage.html';
     }
  }
+
+
+//  for using swiper of offer
+ var swiper = new Swiper(".offer-slider", {
+    spaceBetween: 10,
+    loop:true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        640: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+    },
+});
+//  for using swiper of company/sponsered
+var swiper = new Swiper (".brand-slider", {
+    spaceBetween: 20,
+    autoloop:true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        640: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+        910: {
+          slidesPerView: 4,
+        }
+      },
+});
+
+
+
+
