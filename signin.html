@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign in and Sign up Page</title>
-    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="signin.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -33,7 +33,7 @@
                         <i class="fa-solid fa-lock"></i>
                         <input type="password" placeholder="Confirm Your Password">
                     </div> -->
-                    <p id="forget">Forget password..<a href="#">Click Here!</a></p>
+                    <p id="forget">Forget password..<a href="#forget-pass">Click Here!</a></p>
                     <!-- <p id="forget">I agree to the terms and services</p> -->
 
                 </div>
@@ -60,8 +60,36 @@
                 <h3>More ways To Sign in..</h3>
             </div>
         </div>
+    
+    <!-- <div class="center">
+        <button id="show-forget">Forget Password</button>
+    </div> -->
+    <div class="popup" id="forget-pass">
+        <div class="close-btn"><span>❎</span></div>
+        <div class="form">
+            <h2>Forget Password</h2>
+            <div class="form-element">
+                <label for="create">Create New Password</label>
+                <br>
+                <input type="password" id="new-pw" placeholder="Enter new Password">
+            </div>
+            <div class="form-element">
+                <label for="confirm">Confirm Password</label>
+                <input type="password" id="confirm-pw" placeholder=" Confirm the Password">
+            </div>
+            <div class="form-element">
+                <button>Reset</button>
+            </div>
+            <!-- <div class="form-element">
+                <button>Cancel</button>
+            </div> -->
+
+        </div>
     </div>
+</div>
+    
     <script>
+        // js part
         let signupBtn=document.getElementById("signupBtn");
         let signinBtn=document.getElementById("signinBtn");
         let namefield=document.getElementById("namefield");
@@ -84,6 +112,14 @@
             signupBtn.classList.remove("disable");
             signinBtn.classList.add("disable");
         }
+// fpr popup
+document.querySelector("#forget").addEventListener("click",function(){
+    document.querySelector(".popup").classList.add("active");
+});
+document.querySelector(".popup .close-btn").addEventListener("click",function(){
+    document.querySelector(".popup").classList.remove("active");
+});
+
 
 
     </script>
