@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wanderlust.com</title>
+    <title>WanderHub</title>
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="chandan.css">
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="icon" href="./images/travel-and-tourism.png" >
 
 </head>
 <body onload="typing()">
@@ -23,14 +24,14 @@
         <a href="#packages">packages</a>
         <a href="#s">services</a>
         <a href="#offer">Cupons</a>
-        <a href="#review">memory</a>
+        <a href="./memorypage.html">memory</a>
         <a href="#contact">contact</a>
     </nav>
 
     <div class="icons">
         <i class="fas fa-search" id="search-btn"></i>
-        <i class="fa-solid fa-right-from-bracket" id="login-btn" onclick="logout()" ></i>
-        <i class="fa-solid fa-moon" id="dark-btn" onclick="darkmod()"></i>
+        <div class="tooltip"><i class="fa-solid fa-right-from-bracket" id="login-btn" onclick="logout()" ></i><span class="tooltiptext">Logout</span></div>
+        <div class="tooltip">  <i class="fa-solid fa-moon" id="dark-btn" onclick="darkmod()"></i><br><span class="tooltiptext">Dark</span></i></div>
 
 
      </div>
@@ -39,7 +40,9 @@
 </header>
 
 <section class="home" id="home">
-<h1><span style="color: rgb(250, 166, 10);">M</span>yTr<span style="color: rgb(250, 126, 10);">ip</span></h1>
+    <h1 style="color: white;"><span style="color: orange;">My</span> trip<i class="fa-solid fa-plane fa-beat"></i></h1>
+<!-- <h1><span style="color: rgb(250, 166, 10);">M</span>yTr<span style="color: rgb(250, 126, 10);">ip</span></h1> -->
+
     <div class="content">
         <h3 id="typingeffect"></h3>
         <p>Reinvent tarvel tour experience</p>
@@ -334,12 +337,12 @@
                     <img src="./images/purple-open-gift-box-with-voucher-bonus-surprise-minimal-present-greeting-celebration-promotion-discount-sale-reward-icon-3d-illustration.jpg" alt="Avatar" height="100px",width="200px" alt="">
                     <h3>CSR 50% OFF</h3>
                     <br>
-                    <p><b>only for new custome </b><br>use promocode:<b style="color: orange;">NEF2023 </b><br>valid once per user<br><b> Expires on:15th August 2023</b></p>
+                    <p><b>only for new custome </b><br>use promocode:<b style="color: orange;">CHA2023 </b><br>valid once per user<br><b> Expires on:15th August 2023</b></p>
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="box">
-                    <img src="./images/purple-open-gift-box-with-voucher-bonus-surprise-minimal-present-greeting-celebration-promotion-discount-sale-reward-icon-3d-illustration.jpg" alt="Avatar" height="100px",width="200px" alt="">
+                    <img src="./images/g-2.jpg" alt="Avatar" height="100px",width="200px" alt="">
                     <h3>CSR 20% OFF</h3>
                     <p><b>only for honeymoontrip</b> <br> use promocode:<b style="color: orange;">NEW2023 </b><br>valid once per user<br><b> Expires on:15th August 2023</b></p>
                 </div>
@@ -348,41 +351,41 @@
 
             <div class="swiper-slide">
                 <div class="box">
-                    <img src="./images/purple-open-gift-box-with-voucher-bonus-surprise-minimal-present-greeting-celebration-promotion-discount-sale-reward-icon-3d-illustration.jpg" alt="Avatar" height="100px",width="200px" alt="">
+                    <img src="./images/g-3.jpg" alt="Avatar" height="100px",width="200px" alt="">
                     <h3>CSR 15% OFF</h3><br>
-                    <p><b>only for new religioustip</b> <br> use promocode:<b style="color: orange;">NEW2023 </b><br>valid once per user<br><b> Expires on:15th August 2023</b></p>
+                    <p><b>only for new religioustip</b> <br> use promocode:<b style="color: orange;">REL2023 </b><br>valid once per user<br><b> Expires on:15th August 2023</b></p>
                 </div>
             </div>
 
             <div class="swiper-slide">
                 <div class="box">
-                    <img src="./images/purple-open-gift-box-with-voucher-bonus-surprise-minimal-present-greeting-celebration-promotion-discount-sale-reward-icon-3d-illustration.jpg" alt="Avatar" height="100px",width="200px" alt="">
+                    <img src="./images/g-4.jpg" alt="Avatar" height="100px",width="200px" alt="">
                     <h3>CSR 30% OFF</h3><br>
-                    <p><b>only for student </b><br>use promocode:<b style="color: orange;"> NEW2023 </b><br>valid once per user<br><b> Expires on:15th August 2023</b></p>
+                    <p><b>only for student </b><br>use promocode:<b style="color: orange;"> STU2023 </b><br>valid once per user<br><b> Expires on:15th August 2023</b></p>
                 </div>
             </div>
 
 
             <div class="swiper-slide">
                 <div class="box">
-                    <img src="./images/purple-open-gift-box-with-voucher-bonus-surprise-minimal-present-greeting-celebration-promotion-discount-sale-reward-icon-3d-illustration.jpg" alt="Avatar" height="100px",width="200px" alt="">
+                    <img src="./images/g-5.jpg" alt="Avatar" height="100px",width="200px" alt="">
                     <h3>CSR 25% OFF</h3><br>
-                    <p><b> for internationaltrip </b><br> use promocode:<b style="color: orange;">NEW2023 </b><br>valid once per user<br><b> Expires on:15th August 2023</b></p>
+                    <p><b> for internationaltrip </b><br> use promocode:<b style="color: orange;">INT2023 </b><br>valid once per user<br><b> Expires on:15th August 2023</b></p>
                 </div>
             </div>
 
             <div class="swiper-slide">
                 <div class="box">
-                    <img src="./images/purple-open-gift-box-with-voucher-bonus-surprise-minimal-present-greeting-celebration-promotion-discount-sale-reward-icon-3d-illustration.jpg" alt="Avatar" height="100px",width="200px" alt="">
+                    <img src="./images/g-6.jpg" alt="Avatar" height="100px",width="200px" alt="">
                     <h3>CSR 25% OFF</h3>
-                    <p><b> for Puritrip </b><br> use promocode:<b style="color: orange;">NEW2023 </b><br>use once per user<br><b> Expires on:15th August 2023</b></p>
+                    <p><b> for Puritrip </b><br> use promocode:<b style="color: orange;">PUR2023 </b><br>use once per user<br><b> Expires on:15th August 2023</b></p>
                 </div>
             </div>
 
 
             <div class="swiper-slide">
                 <div class="box">
-                    <img src="./images/purple-open-gift-box-with-voucher-bonus-surprise-minimal-present-greeting-celebration-promotion-discount-sale-reward-icon-3d-illustration.jpg" alt="Avatar" height="100px",width="200px" alt="">
+                    <img src="./images/g-7.jpg" alt="Avatar" height="100px",width="200px" alt="">
                     <h3>CSR 25% OFF</h3><br>
                     <p><b> for 2nd time on book </b><br> use promocode:<b style="color: orange;">SEW2023 </b><br>valid once per user<br><b> Expires on:15th August 2023</b></p>
                 </div>
@@ -452,7 +455,7 @@
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-<script src="./chandan.js"></script>
+<script src="./homepage.js"></script>
 
 
 </body>
