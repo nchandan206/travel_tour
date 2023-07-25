@@ -72,12 +72,10 @@ header  .icons  #dark-btn {
   margin-left: 10px;
   color: white;
   font-size: 20px;
- 
 }
 header .navbar a 
 {
     font-size: 22px;
-
 }
 a:hover{
     text-decoration: underline rgb(205, 123, 24);
@@ -134,28 +132,41 @@ nav a:hover ul.dropdown{
     text-align: center;
 }
 .heading-title{
-    margin-top: 90px;
+    margin-top: 80px;
     text-align: center;
-    font-size: 60px;
+    font-size: 40px;
     text-transform: uppercase;
     color: hsl(31, 85%, 50%);
    
     /* -webkit-text-stroke: 2px black; */
-    font-family:'Times New Roman', Times, serif;
+    font-family:cursive;
     transition: .5s;
    
 }
 .heading-title:hover{
     transform: scale(1.1);
 }
+
+.booking pre{
+    font-size: 25px;
+    font-style: italic ;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    /* margin-left: 40%; */
+    
+}
 .booking .book-form{
     padding: 2rem;
     margin-right: 170px;
     margin-left: 170px;
-    margin-top: 60px;
+    margin-top: 30px;
+    /* background-image: url(ladakhimg4.jpeg); */
     /* margin-left: 50px; */
     /* background: var(--light-bg); */
-    background:linear-gradient(rgba(10,3,40,0.2),rgba(10,3,40,0.2));;
+    background-image:linear-gradient(rgba(10,3,40,0.2),rgba(10,3,40,0.2)),url(booking2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .booking .book-form .flex{
     display: flex;
@@ -174,6 +185,7 @@ nav a:hover ul.dropdown{
     margin-top: 1rem;
     border: var(--border);
     border-radius: 4px;
+    color: black;
 }
  /* .booking .book-form .flex .inputbox input:focus{
     background: var(--white);
@@ -182,6 +194,7 @@ nav a:hover ul.dropdown{
 } */
 .booking .book-form .flex .inputbox input:focus::placeholder{
     color: var(--light-white);
+    color: black;
 
 }
 .booking .book-form .flex .inputbox span{
@@ -213,6 +226,7 @@ nav a:hover ul.dropdown{
     margin-top: 1rem;
     border: var(--border);
     border-radius: 4px;
+    color: black;
     
 }
 /* ending of content part */
@@ -222,6 +236,7 @@ nav a:hover ul.dropdown{
 footer{
     margin-top: 90px;
     background-color:hwb(26 92% 5%);
+    color: black;
 
 }
 .footer-content{
@@ -242,7 +257,7 @@ footer{
     font-size: 25px;
 }
 .social-icon{
-    color: #ebf5f1;
+    /* color: #ebf5f1; */
     font-size: 40px;
     margin-right: 50px;
     text-align: left;
