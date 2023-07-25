@@ -116,14 +116,14 @@ nav ul li #btn1:hover{
 font-family: 'Times New Roman', Times, serif;
     font-size: 80px;
     font-weight: 600;
-    color: #ebf5f1;
+    color:white;
 }
 .headline p{
     /* margin-top: 170px; */
 
     font-size: 30px;
     font-weight: 600;
-    color:hsl(70, 18%, 93%);
+    color:white;
     font-family: 'Times New Roman', Times, serif;
 }
 .headline a{
@@ -176,7 +176,7 @@ font-family: 'Times New Roman', Times, serif;
 /* ABOUT US PART STARTED */
 .about{
     margin-top: 50px;
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
 }
 .about .card{
     border-radius: 10px;
@@ -256,16 +256,18 @@ font-family: 'Times New Roman', Times, serif;
 }
 .des_item h3{
     text-align: center;
-    color: black;
+    /* color: black; */
     font-size: 20px;
     font-family: cursive;
     text-align: left;
+    /* background-color:white; */
 }
 .des_item p{
-    color: black;
+    /* color: black; */
     font-size: 15px;
     font-family: sans-serif;
     text-align: left;
+    /* background-color:white; */
     
 }
 /* destination part complete */
@@ -283,6 +285,7 @@ font-family: 'Times New Roman', Times, serif;
     max-width: 1100px;
     text-align: center;
     margin-bottom: 80px;
+   
 }
 
 .review .heading1{
@@ -368,11 +371,12 @@ font-family: 'Times New Roman', Times, serif;
     /* margin-bottom: 40px; */
     margin-top: 20px;
     margin-bottom: 20px;
+    text-shadow: 3px 3px  white;
 
 
 }
 .contact{
-    background:#f9f9f9 ;
+    /* background:#f9f9f9 ; */
     padding: 50px;
     margin-bottom: 50px;
 }
@@ -389,16 +393,17 @@ font-family: 'Times New Roman', Times, serif;
 }
 .contact form input{
     padding: 10px;
-    color: black;
+    color:black;
     border: none;
     /* outline: none; */
     font-size: 15px;
     border-radius: 10px;
     box-shadow: 0px 5px 5px -6px black ;
-    background-color: transparent;
-}
+    /* background-color: transparent;*/
+} 
 
 .contact form textarea{
+   
     border: none;
     border-radius: 10px;
     resize: none;
@@ -420,6 +425,7 @@ font-family: 'Times New Roman', Times, serif;
 
 
 }
+
 @media(max-width:765px)
 {
     .contact{
