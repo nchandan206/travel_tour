@@ -1,4 +1,4 @@
-//darkmode light mode code with chane in icon
+//Darkmode light mode functionality
 function darkmod()
 {
 
