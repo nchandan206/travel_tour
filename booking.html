@@ -46,46 +46,49 @@
 </div>
 <!-- BOOK ING SECTION START -->
 <section class="booking" id="book">
-    <h1 class="heading-title">Book Your Trip</h1>
+    <h2 class="heading-title">Where do you want to go?<img src="./motivation.png" class="images"></h2>
+    <!-- <img src="./motivation.png"> -->
+    <pre><b>Our experts would love to
+create a package just for you!</b></pre>
     <form class="book-form">
     <div class="flex">
         <div class="inputbox">
             <span>Name:</span>
-            <input type="text" placeholder="Enter your name" name="name" required>
+            <input type="text" placeholder="Enter your name" id="name" required>
         </div>
 
         <div class="inputbox">
             <span>Email:</span>
-            <input type="email" placeholder="Enter your email" name="email" required>
+            <input type="email" placeholder="Enter your email"  id="email" required>
         </div>
 
         <div class="inputbox">
             <span>Phone no:</span>
-            <input type="number" placeholder="Enter your phone no" name="phone" required>
+            <input type="number" placeholder="Enter your phone no"  id="phone" required>
         </div>
 
         <div class="inputbox">
             <span>Address:</span>
-            <input type="text" placeholder="Enter your address" name="address" required>
+            <input type="text" placeholder="Enter your address"  id="address" required>
         </div>
 
         <div class="inputbox">
             <span>Where To:</span>
-            <input type="text" placeholder="Place You want to visit" name="location" required>
+            <input type="text" placeholder="Place You want to visit"  id="location" required>
         </div>
 
         <div class="inputbox">
             <span>How many:</span>
-            <input type="number" placeholder="Number of guest" name="guest" required>
+            <input type="number" placeholder="Number of guest"  id="guest" required>
         </div>
         <div class="inputbox">
             <span>Arrivals:</span>
-            <input type="date" name="arrivals" required>
+            <input type="date"  id="arrivals" required>
         </div>
 
         <div class="inputbox">
             <span>leaving:</span>
-            <input type="date"  name="leaving" required>
+            <input type="date"   id="leaving" required>
         </div>
 
         <div class="inputbox">
@@ -101,7 +104,7 @@
             
         </div>
     </div>
-    <input type="submit" value="submit" class="btn" name="send">
+    <input type="submit" value="Book Now" class="btn" name="send">
     </form>
 </section>
     <!-- content completed -->
@@ -137,8 +140,9 @@
           </div>
           <br>
           
-           <div id="center"> Creater By:-<span style="color:black"> WANDERS HUB</span> <i class="fa-solid fa-heart fa-flip" style="color: #e71313;"></i> </div>
+           <div id="center"> Creater By:-<span> WANDERS HUB</span> <i class="fa-solid fa-heart fa-flip" style="color: #e71313;"></i> </div>
       </footer>
     <!-- detail and footer ending -->
+    <script src="./mybooking.js"></script>
 </body>
 </html>
