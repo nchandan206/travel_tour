@@ -183,6 +183,36 @@ Apart from its pristine beaches and water adventures, Goa is also known for its 
                       
                 </div>
             </div>
+            <br>
+
+            <!-- cousmomer reviews -->
+            <span class="review" >
+                <h2>Customer Reviews</h2>
+                    <table border="1" class="table">
+                        <tr>
+                            <td colspan="2"><pre> &#x2728;    Overall Review                                                                                     4.8 &#x2B50;
+            Excellent  </pre> </td>
+                            
+                        </tr>
+                        <tr>
+                            <td><pre>  <i class="fa-solid fa-clipboard-list" style="color: #da9010;"></i>     Itinerary              4.8 &#x2B50;<br>          Excellent </pre></td>
+                            <td><pre>  <i class="fa-solid fa-hat-cowboy" style="color:orange"></i>     Guide                                      4.9 &#x2B50;<br>          Excellent</td>
+                            
+                        </tr>
+                        <tr>
+                            <td><pre>  <i class="fa-solid fa-car" style="color: #d3810d;"></i>    Transport              4.9 &#x2B50;<br>          Excellent</td>
+                            <td><pre>  <i class="fa-solid fa-bed" style="color: #e29c03;"></i>    Accommodation                            4.7 &#x2B50;<br>          Excellent</td>                        
+                            
+                        </tr>
+                        <tr>
+                            <td><pre>  <i class="fa-solid fa-utensils" style="color: #cd870e;"></i>    Food                    4.7 &#x2B50;<br>         Excellent</td>
+                            <td><pre>  <i class="fa-brands fa-fly" style="color: #d0880b;"></i>    Tour Operator                              4.9 &#x2B50;<br>          Excellent</td>
+                            
+                        </tr>
+                       
+                    </table>
+                </span>
+
 
         </div>
         <div class="booking" id="book">
@@ -192,62 +222,83 @@ Apart from its pristine beaches and water adventures, Goa is also known for its 
                 <div class="flex">
                     <div class="inputbox">
                         <span>Name:</span>
-                        <input type="text" placeholder="Enter your name" name="name" required>
+                        <input type="text" placeholder="Enter your name" id="name" required>
                     </div>
             
                     <div class="inputbox">
                         <span>Email:</span>
-                        <input type="email" placeholder="Enter your email" name="email" required>
+                        <input type="email" placeholder="Enter your email" id="email" required>
                     </div>
             
                     <div class="inputbox">
                         <span>Phone no:</span>
-                        <input type="number" placeholder="Enter your phone no" name="phone" required>
+                        <input type="number" placeholder="Enter your phone no" id="phone" required>
                     </div>
             
                     <div class="inputbox">
                         <span>Address:</span>
-                        <input type="text" placeholder="Enter your address" name="address" required>
+                        <input type="text" placeholder="Enter your address" id="address" required>
                     </div>
             
                     <div class="inputbox">
                         <span>Where To:</span>
-                        <input type="text" value="GOA" name="location" required>
+                        <input type="text" value="GOA" id="location" disabled>
                     </div>
             
                     <div class="inputbox">
                         <span>How many:</span>
-                        <input type="number" placeholder="Number of guest" name="guest" required>
+                        <input type="number" placeholder="Number of guest" id="guest" required>
                     </div>
                     <div class="inputbox">
                         <span>Arrivals:</span>
-                        <input type="date" name="arrivals" required>
+                        <input type="date" id="arrivals" required>
                     </div>
             
                     <div class="inputbox">
                         <span>leaving:</span>
-                        <input type="date"  name="leaving" required>
+                        <input type="date"  id="leaving" required>
                     </div>
             
                     <div class="inputbox">
                         <span id="coupons">coupons applied:</span>
-                        <select>
-                            <option value="none">none</option>
-                            <option value="honey">HONEYMOON20</option>
-                            <option value="stu">STUDENT18</option>
-                            <option value="second">2ND USER</option>
-                            <option value="first">FIRST USER</option>
-                            <option value="team">CSR</option>
+                        <select id="myselect">
+                            <option>none</option>
+                            <option>HONEYMOON20</option>
+                            <option>STUDENT18</option>
+                            <option>2ND USER</option>
+                            <option>FIRST USER</option>
+                            <option>CSR</option>
                         </select>
                         
                     </div>
                 </div>
-                <input type="submit" value="submit" class="btn" name="send">
+                <input type="button" value="Book Now" class="btn"  onclick="openpopup()">
                 </form>
             <!-- </section> -->
 
         </div>
     </div>
+    <!-- for bill showing a popup -->
+    <div id="popup-container">
+        <div class="popup-content">
+            <button type="button"  id="close-btn" onclick="closepopup()">X</button>
+            <h2>Travel Cost Invoice</h2>
+                <h6 style="color: red;">CSR pvt lt</h6>
+                <h2 id="goa-pack">GOA Package</h2><br>
+                <span>Name:</span>
+                <input type="text"><br><br>
+             <span> NO. of persons:</span>
+                <input type="number"><br><br>
+               <span> Total Bill:</span>
+                <input  type="text"> <br>
+                <br>
+                <button id="pay-btn">Pay Now</button>
+
+        
+        </div>
+    </div>
+    <div id="overlay"></div>
+    <!-- ending of bill -->
 
     <!-- iternary and booking ended -->
     <!-- for map -->
@@ -260,10 +311,6 @@ Apart from its pristine beaches and water adventures, Goa is also known for its 
             <iframe width="560" height="315" src="https://www.youtube.com/embed/m2MfLXbnCC8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
     </div>
-
-
-
-
     <!-- content part ended -->
 
     <!-- starting of footer -->
@@ -284,6 +331,6 @@ Apart from its pristine beaches and water adventures, Goa is also known for its 
     </footer>
     <!-- ending of footer  -->
     
-<script src="./goapakage.js"></script>
+<script src="./goapackage.js"></script>
 </body>
 </html>
