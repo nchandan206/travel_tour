@@ -20,10 +20,10 @@
         </div>
 
         <div class="navbar">
-            <i class="fa-solid fa-right-from-bracket" id="login-btn" onclick="logout()" ></i>
+            <div class="tooltip"><i class="fa-solid fa-right-from-bracket" id="login-btn" onclick="logout()" ></i><span class="tooltiptext">Logout</span></div>
         </div>
         <div class="navbar">
-            <i class="fa-solid fa-moon" id="dark-btn" onclick="darkmod()"></i>
+            <div class="tooltip">  <i class="fa-solid fa-moon" id="dark-btn" onclick="darkmod()"></i> <span class="tooltiptext">Dark</span></div>
         </div>
     </nav>
 
@@ -50,13 +50,67 @@
             <span>Y</span>
         </h1>
     </section>
-    <div>
-        description:<input type="text">
-        imagesrc: <input type="text">
-        <button>add</button>
+    <div class="addmemory">
+        Tourname: <input type="text" id="tour" placeholder="enter tourname">
+        <!-- description:<input type='text' id="des"> -->
+        Description:<textarea id="des" placeholder="write description"></textarea>
+        Imagesrc: <input type="text" id="imgsrc" placeholder="enter img src">
+        <button onclick="add()">add</button>
     </div>
-        <div id="div"></div>
-        <div id="div1"></div>
+    <div id="content">
+        <hr>
+
+    </div>
+    <!-- footer part -->
+    <br><br>
+    <hr>
+
+<section class="footer">
+
+    <div class="box-footer">
+        <div class="box3">
+            <h3 id="contact">Contact</h3>
+            <br>
+            <p> <a href="tel:+917847966576"> <i class="fa-solid fa-phone-volume"></i></a>
+                <a href="mailto:nchandan206@gmail.com"><i class="fa-solid fa-envelope"></i></a></p>
+        </div>
+        <div class="box3">
+            <h3>Dowload app</h3>
+            <br>
+            <p><i class="fa-solid fa-cart-arrow-down" style="color: rgb(235, 239, 236);"></i></p>
+        </div>
+        <div class="box3">
+            <h3>branch locations</h3>
+            <a href="#">india</a>
+            <a href="#">USA</a>
+            <a href="#">nepal</a>
+            <a href="#">bangladesh</a>
+        </div>
+        <div class="box3">
+            <h3>quick links</h3>
+            <a href="#">Home</a>
+            <a href="#">book</a>
+            <a href="#">packages</a>
+            <a href="#">services</a>
+            <a href="#">gallery</a>
+            <a href="#">review</a>
+            <a href="#">contact</a>
+        </div>
+        <div class="box3">
+            <h3>Social media </h3>
+            <a href="#">facebook</a>
+            <a href="#">instagram</a>
+            <a href="#">twitter</a>
+            <a href="#">linkedin</a>
+        </div>
+
+    </div>
+    <hr><hr>
+
+    <h1 class="credit"> Made by <span style="color:orange;"> CSR </span> | BOOKING.COM </h1>
+
+</section>
+
 <script src="./memorypage.js"></script>
 </body>
 </html>
