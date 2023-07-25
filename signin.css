@@ -18,6 +18,7 @@
     font-family:cursive;
     font-size: 40px;
     color: rgb(123, 198, 25);
+    margin-left: 10px;
 }
 #blue{
     font-family: cursive;
@@ -128,7 +129,7 @@ form p a{
 }
 .popup{
     position: absolute;
-    top: -150%;
+    top: -60%;
     left: 170%;
     right: -150%;
     opacity: 0;
@@ -141,10 +142,10 @@ form p a{
     transition: top 0ms ease-in-out 200ms,
     opacity 200ms ease-in-out 0ms,
     transform 200ms ease-in-out 0ms;
-    height: 300px;
+    height: 380px;
 }
 .popup.active{
-    top: 15%;
+    top: 20%;
     right: 15%;
     opacity: 1;
     transform: translate(-50%,-50%) scale(1);
@@ -192,6 +193,15 @@ form p a{
 
 }
 .popup .form .form-element input[type="password"] {
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 5px;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+.popup .form .form-element input[type="email"] {
     margin-top: 5px;
     display: block;
     width: 100%;
