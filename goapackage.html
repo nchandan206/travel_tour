@@ -22,7 +22,7 @@
               <li><a href="#Overview">Overview</a></li>
               <li><a href="#location">Location</a></li>
               <li><a href="#itinerary">Itinerary</a></li>
-              <li><i class="fa-solid fa-moon" class="darkmode" id="dark-btn" onclick="darkmod()"></i></li>
+              <li id="tooltip"><i class="fa-solid fa-moon" class="darkmode" id="dark-btn" onclick="darkmod()"></i><br><span class="tooltiptext">Dark</span></li>
              
           </ul>
       </nav>
@@ -227,7 +227,7 @@ Apart from its pristine beaches and water adventures, Goa is also known for its 
             
                     <div class="inputbox">
                         <span>Email:</span>
-                        <input type="email" placeholder="Enter your email" id="email" required>
+                        <input type="email" placeholder="Enter your email" id="email" disabled>
                     </div>
             
                     <div class="inputbox">
@@ -273,7 +273,7 @@ Apart from its pristine beaches and water adventures, Goa is also known for its 
                         
                     </div>
                 </div>
-                <input type="submit" value="Book Now" id="book-btn" class="btn">
+                <input type="submit" value="Book Now"  class="btn" name="send" onclick="book()">
                 <input type="button" value="Bill Invoice" class="btn" id="price"  onclick="openpopup()">
                 </form>
             <!-- </section> -->
@@ -286,24 +286,25 @@ Apart from its pristine beaches and water adventures, Goa is also known for its 
             <button type="button"  id="close-btn" onclick="closepopup()">X</button>
             <h2>Travel Cost Invoice</h2>
                 <h6 style="color: red;">CSR pvt lt</h6>
-                <h2 id="goa-pack">GOA Package</h2><br>
+                <h2 id="goa-pack"></h2><br>
                 <span>Name:</span>
-             <span id="b-name"></span><br><br>
-<!--                 <input type="text"><br><br> -->
+                <input type="text" id="username" disabled><br><br>
+               <!-- <span id="b-name"></span><br><br> -->
              <span> NO. of persons:</span>
-             <span id="b-no"></span><br><br>
-<!--                 <input type="number"><br><br> -->
+             <!-- <span id="b-total"></span><br><br> -->
+                <input type="number" id="person" disabled><br><br>
                <span> Total Bill:</span>
-            <span id="b-total"></span><br><br>
-<!--                 <input  type="text"> <br> -->
-                <br>
-                <button id="pay-btn">Pay Now</button>
+               <!-- <span id=""></span> -->
+                <input  type="text" id="totalbil"> <br>
+                <br><br>
+                <button id="pay-btn" onclick="pay()">Pay Now</button>
 
         
         </div>
     </div>
     <div id="overlay"></div>
     <!-- ending of bill -->
+
 
     <!-- iternary and booking ended -->
     <!-- for map -->
