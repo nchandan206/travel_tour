@@ -210,10 +210,7 @@ label{
     margin-left: 58px;
     margin-top: 30px;
 }
-.overview-heading h2{
-    text-shadow: 5px 5px 5px #e18a18;
 
-}
 /* overview end */
 /*  what to expect*/
 .iternary-container{
@@ -226,7 +223,7 @@ label{
     margin-top: 80px;
     margin-bottom: 40px;
     margin-left: 50px;
-    text-shadow: 5px 5px 5px #e18a18;
+    /* text-shadow: 5px 5px 5px #e18a18; */
     /* text-decoration: underline 4px; */
 } 
 .questions-container{
@@ -253,7 +250,7 @@ label{
     cursor: pointer;
 }
 .question p{
-    font-size: 18px;
+    font-size: 15px;
     max-height: 0;
     opacity: 0;
     line-height: 1.5;
@@ -263,7 +260,7 @@ label{
 }
 .question span{
     /* color: #e3ae68ed; */
-    font-size: 27px;
+    font-size: 20px;
     font-family: cursive;
 }
 .d-arrow{
@@ -283,6 +280,42 @@ label{
 
 /* end of  iteranry*/
 
+/* starting of review */
+.review{
+    margin-left: 50px;
+}
+.review h2{
+    margin-bottom: 20px;
+}
+
+.review .table{
+    width: 800px;
+    border-radius: 2px;
+    border-style: solid;
+    /* border-color:black; */
+    border-width: 3px;
+    margin-left: 100px;
+    padding: 15px 15px 15px 15px;
+}
+.review .table td{
+    padding: 5px;
+    /* font-family: cursive; */
+}
+.review .table td i{
+    font-size: 25px;
+}
+.review .table td pre{
+    font-weight: 600;
+    font-family: cursive;
+    
+
+}
+
+
+
+
+/* ending of review */
+
 
 /* starting for book */
 .iternary-container .booking{
@@ -293,10 +326,7 @@ label{
 .booking{
     position:sticky;
 }
-.booking .heading-title{
-    text-shadow: 5px 5px 5px #e18a18;
 
-}
 .booking .book-form{
     padding: 1rem;
     margin-right: 70px;
@@ -304,7 +334,9 @@ label{
     margin-top: 10px;
     /* margin-left: 50px; */
     /* background: var(--light-bg); */
-    background:linear-gradient(rgba(10,3,40,0.2),rgba(10,3,40,0.2));;
+    /* background:linear-gradient(rgba(10,3,40,0.2),rgba(10,3,40,0.2));; */
+    /* background-color: #eccfa8; */
+    background:linear-gradient(hwb(29 68% 10% / 0.745),hwb(29 56% 24% / 0.745)),url(keralabooking.jpeg);
 }
 /* .booking .book-form .flex{
     display: flex;
@@ -344,6 +376,7 @@ label{
     border-radius: 5px;
     font-size: 1rem;
     background-color: #fff;
+    padding: 7px;
 } 
 .booking .book-form .btn:hover{
     background-color: rgb(205, 123, 24);
@@ -354,6 +387,12 @@ label{
     font-size: 1.5rem;
     color:var(--light-black);
 
+}
+.booking .book-form .flex .inputbox span{
+    color: black;
+}
+.booking .book-form .flex .inputbox #coupons{
+    color: black;
 }
 .booking .book-form .inputbox select{
     width:100%;
@@ -368,6 +407,74 @@ label{
     
 }
 
+/* starting of bill to popup */ 
+#popup-container{
+    display: none;
+    position: fixed;
+    height: 400px;
+    width: 375px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+     background: linear-gradient(#ca9676,hsl(39, 69%, 71%)); 
+     /* background: #888888; */
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    z-index: 9999;
+    text-align: center;
+    
+}
+.popup-content h2{
+    text-shadow: 2px 2px 4px #000000;
+
+}
+
+ #overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    background-color:rgba(206,196,196,0.5) ;
+     backdrop-filter: blur(5px); 
+ }  
+
+ #close-btn{
+    font-size:18px;
+    background: #ca9676;
+    /* background: linear-gradient(#ca9676,hsl(39, 69%, 71%));  */
+    border: none;
+    margin-left: 300px;
+    color:#000000;
+    font-weight: 700;
+} 
+.popup-content input{
+    border-radius: 2px;
+}
+.popup-content #pay-btn{
+    padding: 8px;
+    margin-top: 20px;
+    border-radius: 10px;
+
+}
+.popup-content #pay-btn:hover{
+    padding: 9px;
+   background-color: green;
+   cursor: pointer;
+   color: #fff;
+
+}
+.popup-content span{
+    text-shadow: 2px 2px 4px #000000;
+}
+
+
+/* ending of bill */
+
+
 
 /* for map and youtube video */
 span h2{
@@ -375,7 +482,7 @@ span h2{
     margin-top: 30px;
     font-size: 40px ;
     font-family: 'Times New Roman', Times, serif;
-    text-shadow: 5px 5px 5px #e18a18;
+    /* text-shadow: 5px 5px 5px #e18a18; */
 }
 span i{
     text-shadow: none;
