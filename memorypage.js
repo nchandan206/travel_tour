@@ -47,8 +47,8 @@ function display(data){
         iner2.id='div1';
         const tour=document.createElement('h2');
         const description=document.createElement('p');
-        tour.innerText="tourname:"+item.tour;
-        description.innerText="description:"+item.description;
+        tour.innerHTML="tourname:"+item.tour+"<br>";
+        description.innerHTML="Description:"+" "+item.description;
         const edit=document.createElement('button');
         const delet=document.createElement('button');
         const imgadd=document.createElement('button');
@@ -63,22 +63,26 @@ function display(data){
         // newtour.id='newtour';
         newtour.className='newtour';
         const newdes=document.createElement('textarea');
+        const newdes1=document.createElement('textarea');
         newdes.placeholder='enter description';
+        newdes1.placeholder='enter description';
         newdes.type='text';
         // newdes.id='newdes';
         newdes.className='newdes';
+        newdes1.className='newdes1';
         const newimage=document.createElement('input');
         newimage.placeholder='new img src';
         newimage.type='text';
         newimage.className='newimg';
         const editit=document.createElement('button');
-        editit.innerHTML="   "+"Editit";
+        editit.innerHTML="Editit";
         const count=document.createElement('input');
         count.className='newcount';
         count.type='number';
         count.placeholder='type image number';
-        editdiv.append(newtour,newdes,count,newimage,editit,close);
+        editdiv.append(newtour,newdes,newdes1,count,newimage,editit,close);
         editdiv.style.display='none';
+
 
 
         let i=0;
@@ -125,9 +129,29 @@ function display(data){
         })
 
         // container.append(tour,description,imgadd,edit,delet);
+        const feild=document.createElement('fieldset');
+        const feild1=document.createElement('fieldset');
+        const legend=document.createElement('legend');
+        legend.innerText='Image';
+        const legend1=document.createElement('legend');
+        legend1.innerText='Memory';
+        feild1.className='feild1';
+        feild.className='feild';
+        // feild.style.backgroundColor="rgb(255, 164, 27)";
+        // feild1.style.backgroundColor="yellow";
+        legend1.style.color='rgb(255, 164, 27)';
+     
+        
+        
+        const space=document.createElement('br');
+        
+        
 
         iner1.append(tour,description,imgadd,edit,delet,editdiv);
-        container1.append(iner1,iner2);
+        feild.append(legend,iner2);
+        feild1.append(legend1,iner1,feild);
+        container1.append(feild1,space);
+        
         
 })
 }
@@ -144,8 +168,8 @@ function handleadd(id,t,des,arr){
     arr.push(input);
 
     const updateblog={
-        email:email.value,
-        password:password.value,
+        email2:email.value,
+        password2:password.value,
         tour:t,
         description:des,
         image:arr
@@ -188,8 +212,8 @@ else{
     arr.splice(count-1,1,z);
 
     const updateblog={
-        email:email.value,
-        password:password.value,
+        email2:email,
+        password2:password,
         tour:x,
         description:y,
         image:arr
@@ -236,8 +260,8 @@ function add()
         array.push(image);
     const url1= "  http://localhost:3000/memory";
     const newmemory={
-        email:email,
-        password:password,
+        email2:email,
+        password2:password,
         tour:tour,
         description:des,
         image:array
@@ -321,3 +345,5 @@ function darkmod()
 
 
  }
+
+
