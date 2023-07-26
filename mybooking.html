@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./mybook.css">
+</head>
+<body>
+    <header >
+        <nav class="nav">
+        <h3><span>My</span> trip<i class="fa-solid fa-plane fa-beat"></i></h3>
+        <a href="#" class="logo"><span>My</span>Book</a>
+        <div class="navbar">
+            <a href="./homepage.html">Home</a>
+        </div>
+
+        <div class="navbar">
+            <div class="tooltip"><i class="fa-solid fa-right-from-bracket" id="login-btn" onclick="logout()" ></i><span class="tooltiptext">Logout</span></div>
+        </div>
+        <div class="navbar">
+            <div class="tooltip">  <i class="fa-solid fa-moon" id="dark-btn" onclick="darkmod()"></i> <span class="tooltiptext">Dark</span></div>
+        </div>
+    </nav>
+
+    </header>
+  
+
+    <fieldset style="border: 2px solid rgb(201, 153, 98)">
+        <legend style="text-align: center; font-size: 20px;color: rgb(237, 142, 47);font-weight: 700;">Booking History</legend>
+    <div id="div" style="text-align: center;font-size: 30px;display: flex;margin: auto;padding: 40px;">
+        
+    </div>
+    </fieldset>
+<script src="./mybooking.js"></script>
+    
+</body>
+</html>
