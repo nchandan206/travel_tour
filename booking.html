@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my booking</title>
     <!-- link for css -->
-    <link rel="stylesheet" href="./mybooking.css">
+    <link rel="stylesheet" href="./book.css">
     <!-- link for font-awesome cndj -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -55,7 +55,7 @@ create a package just for you!</b></pre>
 
         <div class="inputbox">
             <span>Email:</span>
-            <input type="email" placeholder="Enter your email"  id="email" required>
+            <input type="email" placeholder="Enter your email"  id="email" required disabled>
         </div>
 
         <div class="inputbox">
@@ -70,17 +70,25 @@ create a package just for you!</b></pre>
 
         <div class="inputbox">
             <span>Where To:</span>
-            <input type="text" placeholder="Place You want to visit"  id="location" required>
+            <!-- <input type="text" placeholder="Place You want to visit"  id="location" required> -->
+            <select id="location">
+                <option>Puri</option>
+                <option>Jaipur</option>
+                <option>Goa</option>
+                <option>Kerla</option>
+                <option>Dubai</option>
+                <option>Ladhak</option>
+            </select>
         </div>
 
         <div class="inputbox">
             <span>How many:</span>
             <input type="number" placeholder="Number of guest"  id="guest" required>
         </div>
-        <div class="inputbox">
+        <!-- <div class="inputbox">
             <span>Arrivals:</span>
             <input type="date"  id="arrivals" required>
-        </div>
+        </div> -->
 
         <div class="inputbox">
             <span>leaving:</span>
@@ -89,7 +97,7 @@ create a package just for you!</b></pre>
 
         <div class="inputbox">
             <span id="coupons">coupons applied:</span>
-            <select>
+            <select id="myselect">
                 <option>none</option>
                 <option>HONEYMOON20</option>
                 <option>STUDENT18</option>
@@ -97,11 +105,16 @@ create a package just for you!</b></pre>
                 <option>FIRST USER</option>
                 <option>CSR</option>
             </select>
-            <input type="button" value="Book Now" class="btn"  onclick="openpopup()">
+            <!-- <input type="button" value="Book Now" class="btn" name="send" onclick="book()">
+            <input type="button" value="Billinvoice" class="btn"  onclick="openpopup()"> -->
+
 
         </div>
     </div>
+    <input type="button" value="Book Now" class="btn" name="send" onclick="book()">
+    <input type="button" value="Bill Invoice" class="btn"  onclick="openpopup()">
     </form>
+    <!-- <h1 id="price"></h1> -->
 </section>
 
 
@@ -111,15 +124,16 @@ create a package just for you!</b></pre>
         <button type="button"  id="close-btn" onclick="closepopup()">X</button>
         <h2>Travel Cost Invoice</h2>
             <h6 style="color: red;">CSR pvt lt</h6>
-            <h2 id="goa-pack">GOA Package</h2><br>
+            <h2 id="goa-pack"></h2><br>
             <span>Name:</span>
-            <input type="text"><br><br>
+            <input type="text" id="username" disabled><br><br>
          <span> NO. of persons:</span>
-            <input type="number"><br><br>
+            <input type="number" id="person" disabled><br><br>
            <span> Total Bill:</span>
-            <input  type="text"> <br>
+            <input  type="text" id="totalbill"> <br>
+            <!-- <span id="totalbil" style="color: white;"></span> -->
             <br>
-            <button id="pay-btn">Pay Now</button>
+            <button id="pay-btn" onclick="pay()">Pay Now</button>
     </div>
 </div>
 <div id="overlay"></div>
@@ -161,40 +175,8 @@ create a package just for you!</b></pre>
            <div id="center"> Creater By:-<span> WANDERS HUB</span> <i class="fa-solid fa-heart fa-flip" style="color: #e71313;"></i> </div>
       </footer>
     <!-- detail and footer ending -->
-    <script>
-        //darkmode light mode code with chane in icon
-function darkmod()
-{
-
-    const dk=document.getElementById('dark-btn');
-    if(dk.className=='fa-solid fa-moon')
-    {
-    const el=document.body;
-    el.classList.toggle("dark-mode");
-    dk.className='fa-sharp fa-solid fa-moon';
-    dk.style.color='orange';
-    }
-    else{
-        const el=document.body;
-        el.classList.toggle("dark-mode");
-        dk.className='fa-solid fa-moon';
-        dk.style.color='white';
-    }
 
 
- }
-
- //for bill to pop out
-
-function openpopup()
-{
-    document.getElementById('popup-container').style.display='block';
-    document.getElementById('overlay').style.display='block';
-}
-function closepopup(){
-    document.getElementById('popup-container').style.display='none';
-    document.getElementById('overlay').style.display='none';
-}
-</script>
+<script src="./booking.js"></script>
 </body>
 </html>
