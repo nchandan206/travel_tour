@@ -1,6 +1,6 @@
 *{padding: 0;
     margin: 0;
-    /* color: white; */
+    /* color:black; */
     box-sizing: border-box;
     font-family:sans-serif;}
     /* for dark mood */
@@ -65,6 +65,30 @@ nav ul li a:hover{
 
 
 /* content part started */
+
+.package-days{
+    margin-left: 70px;
+    font-weight: 800;
+    /* margin-bottom: 0px; */
+    font-size: 20px;
+    font-family: cursive;
+}
+br{
+    height: 10px;
+}
+.no-days{
+    /* margin-top: 0px; */
+    margin-left: 70px;
+    font-weight: 600;
+    font-family: cursive;
+    /* margin-top: 0%; */
+}
+span .package-days{
+    height: 10;
+}
+span .no-days{
+    height: 10px;
+}
 /* heading */
 section.goa{
     margin-top: 100px;
@@ -210,7 +234,6 @@ label{
     margin-left: 58px;
     margin-top: 30px;
 }
-
 /* overview end */
 /*  what to expect*/
 .iternary-container{
@@ -233,11 +256,11 @@ label{
 }
 
 .question{
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #100f0f;
 }
 .question button{
     width: 100%;
-    background-color:#fff;
+    background-color:white;
     display: flex;
     justify-content: space-between; 
      align-items: center;
@@ -265,7 +288,7 @@ label{
 }
 .d-arrow{
     transition: transform 0.5s ease-in ;
-    color: #fff;
+    color:white;
 }
 
 /*add this class when click*/
@@ -288,23 +311,24 @@ label{
     margin-bottom: 20px;
 }
 
-.review .table{
-    width: 800px;
+.review .table-review{
+    width: 600px;
     border-radius: 2px;
     border-style: solid;
     /* border-color:black; */
     border-width: 3px;
     margin-left: 100px;
-    padding: 15px 15px 15px 15px;
+    /* padding: 15px 15px 15px 15px; */
 }
-.review .table td{
+.review .table-review td{
     padding: 5px;
+
     /* font-family: cursive; */
 }
-.review .table td i{
+.review .table-review td i{
     font-size: 25px;
 }
-.review .table td pre{
+.review .table-review td pre{
     font-weight: 600;
     font-family: cursive;
     
@@ -323,10 +347,6 @@ label{
     margin-right: 20px;
     
 }
-.booking{
-    position:sticky;
-}
-
 .booking .book-form{
     padding: 1rem;
     margin-right: 70px;
@@ -334,18 +354,11 @@ label{
     margin-top: 10px;
     /* margin-left: 50px; */
     /* background: var(--light-bg); */
-    /* background:linear-gradient(rgba(10,3,40,0.2),rgba(10,3,40,0.2));; */
-    /* background-color: #eccfa8; */
     background:linear-gradient(hwb(29 68% 10% / 0.745),hwb(29 56% 24% / 0.745)),url(keralabooking.jpeg);
+    /* background-color: #eccfa8; */
+   
 }
-/* .booking .book-form .flex{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
- .booking .book-form .flex .inputbox{
-    flex: 3 1 10rem;
-} */
+
 .booking .book-form .flex .inputbox input{
     width:100%;
     /* padding:.5rem .5rem; */
@@ -376,7 +389,6 @@ label{
     border-radius: 5px;
     font-size: 1rem;
     background-color: #fff;
-    padding: 7px;
 } 
 .booking .book-form .btn:hover{
     background-color: rgb(205, 123, 24);
@@ -406,12 +418,17 @@ label{
     /* color: #e18a18; */
     
 }
+.booking{
+    position:sticky;
+    top: 200;
+}
+/* end of booking */
 
 /* starting of bill to popup */ 
 #popup-container{
     display: none;
     position: fixed;
-    height: 400px;
+    height: 425px;
     width: 375px;
     top: 50%;
     left: 50%;
@@ -529,9 +546,10 @@ span i{
 
 /* footer part ending */
 
+
 /* starting for tooltip */
 /* use tooltip */
-#tooltip {
+ #tooltip {
     position: relative;
     display: inline-block;
     }
