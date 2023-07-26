@@ -69,14 +69,25 @@ nav ul li a:hover{
 .package-days{
     margin-left: 70px;
     font-weight: 800;
-    margin-bottom: 0px;
+    /* margin-bottom: 0px; */
     font-size: 20px;
+    font-family: cursive;
+}
+br{
+    height: 10px;
 }
 .no-days{
-    margin-top: 0px;
+    /* margin-top: 0px; */
     margin-left: 70px;
     font-weight: 600;
-    margin-top: 0%;
+    font-family: cursive;
+    /* margin-top: 0%; */
+}
+span .package-days{
+    height: 10;
+}
+span .no-days{
+    height: 10px;
 }
 /* heading */
 section.goa{
@@ -223,10 +234,6 @@ label{
     margin-left: 58px;
     margin-top: 30px;
 }
-.overview-heading h2{
-    text-shadow: 5px 5px 5px #e18a18;
-
-}
 /* overview end */
 /*  what to expect*/
 .iternary-container{
@@ -239,7 +246,7 @@ label{
     margin-top: 80px;
     margin-bottom: 40px;
     margin-left: 50px;
-    text-shadow: 5px 5px 5px #e18a18;
+    /* text-shadow: 5px 5px 5px #e18a18; */
     /* text-decoration: underline 4px; */
 } 
 .questions-container{
@@ -297,39 +304,39 @@ label{
 /* end of  iteranry*/
 
 /* starting of review */
- .review{
+.review{
     margin-left: 50px;
 }
 .review h2{
     margin-bottom: 20px;
 }
 
-.review table{
-    width: 780px;
+.review .table-review{
+    width: 600px;
     border-radius: 2px;
     border-style: solid;
-    border-color:black;
+    /* border-color:black; */
     border-width: 3px;
     margin-left: 100px;
-    padding: 15px 15px 15px 15px;
-    /* color: #fff; */
+    /* padding: 15px 15px 15px 15px; */
 }
-.review table td{
-    padding: 8px;
-    
-    
+.review .table-review td{
+    padding: 5px;
+
+    /* font-family: cursive; */
 }
-.review table td i{
+.review .table-review td i{
     font-size: 25px;
 }
-.review table td pre{
+.review .table-review td pre{
     font-weight: 600;
     font-family: cursive;
-   
     
 
-} 
-  
+}
+
+
+
 
 /* ending of review */
 
@@ -340,13 +347,6 @@ label{
     margin-right: 20px;
     
 }
-.booking{
-    position:sticky;
-}
-.booking .heading-title{
-    text-shadow: 5px 5px 5px #e18a18;
-
-}
 .booking .book-form{
     padding: 1rem;
     margin-right: 70px;
@@ -354,18 +354,11 @@ label{
     margin-top: 10px;
     /* margin-left: 50px; */
     /* background: var(--light-bg); */
-    /* background:linear-gradient(rgba(10,3,40,0.2),rgba(10,3,40,0.2));; */
-    background-color: #eccfa8;
+    background:linear-gradient(hwb(29 68% 10% / 0.745),hwb(29 56% 24% / 0.745)),url(keralabooking.jpeg);
+    /* background-color: #eccfa8; */
    
 }
-/* .booking .book-form .flex{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
- .booking .book-form .flex .inputbox{
-    flex: 3 1 10rem;
-} */
+
 .booking .book-form .flex .inputbox input{
     width:100%;
     /* padding:.5rem .5rem; */
@@ -425,6 +418,79 @@ label{
     /* color: #e18a18; */
     
 }
+.booking{
+    position:sticky;
+    top: 200;
+}
+/* end of booking */
+
+/* starting of bill to popup */ 
+#popup-container{
+    display: none;
+    position: fixed;
+    height: 425px;
+    width: 375px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+     background: linear-gradient(#ca9676,hsl(39, 69%, 71%)); 
+     /* background: #888888; */
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    z-index: 9999;
+    text-align: center;
+    
+}
+.popup-content h2{
+    text-shadow: 2px 2px 4px #000000;
+
+}
+
+ #overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    background-color:rgba(206,196,196,0.5) ;
+     backdrop-filter: blur(5px); 
+ }  
+
+ #close-btn{
+    font-size:18px;
+    background: #ca9676;
+    /* background: linear-gradient(#ca9676,hsl(39, 69%, 71%));  */
+    border: none;
+    margin-left: 300px;
+    color:#000000;
+    font-weight: 700;
+} 
+.popup-content input{
+    border-radius: 2px;
+}
+.popup-content #pay-btn{
+    padding: 8px;
+    margin-top: 20px;
+    border-radius: 10px;
+
+}
+.popup-content #pay-btn:hover{
+    padding: 9px;
+   background-color: green;
+   cursor: pointer;
+   color: #fff;
+
+}
+.popup-content span{
+    text-shadow: 2px 2px 4px #000000;
+}
+
+
+/* ending of bill */
+
 
 
 /* for map and youtube video */
@@ -433,7 +499,7 @@ span h2{
     margin-top: 30px;
     font-size: 40px ;
     font-family: 'Times New Roman', Times, serif;
-    text-shadow: 5px 5px 5px #e18a18;
+    /* text-shadow: 5px 5px 5px #e18a18; */
 }
 span i{
     text-shadow: none;
