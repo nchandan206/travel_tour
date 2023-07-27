@@ -1,4 +1,17 @@
-//Darkmode light mode functionality
+const buttons = document.querySelectorAll('button');
+
+buttons.forEach( button =>{
+    button.addEventListener('click',()=>{
+        const faq = button.nextElementSibling;
+        const icon = button.children[1];
+
+        faq.classList.toggle('show');
+        icon.classList.toggle('rotate');
+    })
+} )
+
+
+//darkmode light mode code with chane in icon
 function darkmod()
 {
 
@@ -19,9 +32,3 @@ function darkmod()
 
 
  }
-//submit successful message
-function sub()
-{
-    alert('we will get back soon');
-    document.location.href='#';
-}

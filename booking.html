@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my booking</title>
+    <!-- link for css -->
+    <link rel="stylesheet" href="./mybooking.css">
+    <!-- link for font-awesome cndj -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+     <!-- starting of header -->
+     <header>
+        <nav id="navbar">
+            <h3><span>My</span> trip<i class="fa-solid fa-plane fa-beat"></i></h3>
+              
+              <ul>
+                  <li><a href="#">Home</a></li>
+                  <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">Packages</a>
+                    <div class="dropdown-content">
+                        <a href="./goapackage.html " target="_blank">Goa</a>
+                        <a href="./keralapackage.html" target="_blank">Kerale</a>
+                        <a href="./jaipurpackage.html" target="_blank">Jaipur</a>
+                        <a href="./puripackage.html" target="_blank">Odisha</a>
+                      </div>
+                    </li>
+                  <li><a href="#book">Book</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <li><i class="fa-solid fa-right-from-bracket" id="login-btn" onclick="logout()" ></i></li>
+                  <li><i class="fa-solid fa-moon" class="darkmode" id="dark-btn" onclick="darkmod()"></i></li>
+                 
+              </ul>
+          </nav>
+        </header>
+        <!-- ending of header -->
+
+<!-- content part -->
+<div class="heading">
+
+</div>
+<!-- BOOK ING SECTION START -->
+<section class="booking" id="book">
+    <h2 class="heading-title">Where do you want to go?<img src="./motivation.png" class="images"></h2>
+    <!-- <img src="./motivation.png"> -->
+    <pre><b>Our experts would love to
+create a package just for you!</b></pre>
+    <form class="book-form">
+    <div class="flex">
+        <div class="inputbox">
+            <span>Name:</span>
+            <input type="text" placeholder="Enter your name" id="name" required>
+        </div>
+
+        <div class="inputbox">
+            <span>Email:</span>
+            <input type="email" placeholder="Enter your email"  id="email" disabled>
+        </div>
+
+        <div class="inputbox">
+            <span>Phone no:</span>
+            <input type="number" placeholder="Enter your phone no"  id="phone" required>
+        </div>
+
+        <div class="inputbox">
+            <span>Address:</span>
+            <input type="text" placeholder="Enter your address"  id="address" required>
+        </div>
+
+        <div class="inputbox">
+            <span>Where To:</span>
+            <input type="text" placeholder="Place You want to visit"  id="location" required>
+        </div>
+
+        <div class="inputbox">
+            <span>How many:</span>
+            <input type="number" placeholder="Number of guest"  id="guest" required>
+        </div>
+        <div class="inputbox">
+            <span>Arrivals:</span>
+            <input type="date"  id="arrivals" required>
+        </div>
+
+        <div class="inputbox">
+            <span>leaving:</span>
+            <input type="date"   id="leaving" required>
+        </div>
+
+        <div class="inputbox">
+            <span id="coupons">coupons applied:</span>
+            <select>
+                <option>none</option>
+                <option>HONEYMOON20</option>
+                <option>STUDENT18</option>
+                <option>2ND USER</option>
+                <option>FIRST USER</option>
+                <option>CSR</option>
+            </select>
+            <input type="button" value="Book Now" class="btn"  onclick="openpopup()">
+
+        </div>
+    </div>
+    </form>
+</section>
+
+
+<!-- for bill showing a popup -->
+<div id="popup-container">
+    <div class="popup-content">
+        <button type="button"  id="close-btn" onclick="closepopup()">X</button>
+        <h2>Travel Cost Invoice</h2>
+            <h6 style="color: red;">CSR pvt lt</h6>
+            <h2 id="goa-pack">GOA Package</h2><br>
+            <span>Name:</span>
+            <input type="text"><br><br>
+         <span> NO. of persons:</span>
+            <input type="number"><br><br>
+           <span> Total Bill:</span>
+            <input  type="text"> <br>
+            <br>
+            <button id="pay-btn">Pay Now</button>
+    </div>
+</div>
+<div id="overlay"></div>
+<!-- ending of bill -->
+    <!-- content completed -->
+
+    
+
+
+    <!-- starting of footer -->
+    <footer id="contact">
+        <div class="footer-content">
+          
+          <div class="footer-contact">
+            <h3>Contact Us</h3><br>
+            <pre><i class="fa-solid fa-envelope fa-beat" style="color: #1d9082;"></i> Email: info@CSRbooking.com</pre>
+            <pre><i class="fa-solid fa-phone fa-shake" style="color: #125809;"></i> Phone: +1 (123) 456-7890</pre>
+            <pre><i class="fa-solid fa-address-book fa-beat" style="color: #bbc62a;"></i> Address: 123 Main Street,City,Country</pre><br>
+          </div>
+        </div>
+        <hr>          
+          <div id="icon_footer">
+            <div id="foricon">
+            <!-- facebook link -->
+            <a href="https://www.facebook.com/ " target="_blank"  class="social-icon"><i class="fa-brands fa-facebook fa-beat" style="color: #2254aa;"></i></a>
+            <!-- twitter link -->
+            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2F%3Flang%3Den-in" target="_blank" class="social-icon"> <i class="fa-brands fa-twitter fa-beat" style="color: #1679c5;"></i> </a>
+            <!-- instagram link -->
+            <a href="https://www.instagram.com/" target="_blank" class="social-icon"><i class="fa-brands fa-instagram fa-beat" style="color: #9e551a;"></i></a>
+            <!-- whatsapp link -->
+            <a href="https://web.whatsapp.com/" target="_blank" class="social-icon"><i class="fa-brands fa-whatsapp fa-beat" style="color: #31970c;"></i> </a>
+          <div>
+            <br>
+        copyright &#169;2023 CSR BOOKING Pvt.Lt      <br>                                         
+           webdesign and create by CSRbooking.com
+          </div>
+          <br>
+          
+           <div id="center"> Creater By:-<span> WANDERS HUB</span> <i class="fa-solid fa-heart fa-flip" style="color: #e71313;"></i> </div>
+      </footer>
+    <!-- detail and footer ending -->
+    <script>
+        //darkmode light mode code with chane in icon
+function darkmod()
+{
+
+    const dk=document.getElementById('dark-btn');
+    if(dk.className=='fa-solid fa-moon')
+    {
+    const el=document.body;
+    el.classList.toggle("dark-mode");
+    dk.className='fa-sharp fa-solid fa-moon';
+    dk.style.color='orange';
+    }
+    else{
+        const el=document.body;
+        el.classList.toggle("dark-mode");
+        dk.className='fa-solid fa-moon';
+        dk.style.color='white';
+    }
+
+
+ }
+
+ //for bill to pop out
+
+function openpopup()
+{
+    document.getElementById('popup-container').style.display='block';
+    document.getElementById('overlay').style.display='block';
+}
+function closepopup(){
+    document.getElementById('popup-container').style.display='none';
+    document.getElementById('overlay').style.display='none';
+}
+</script>
+</body>
+</html>

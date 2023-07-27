@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+ /* for darkmode effect */
+
+.dark-mode {
+    background-color: rgb(21, 20, 20);
+    color: white;
+  } 
+
+header{
+
+    position: fixed;
+    top:0; left: 0; right:0;
+    z-index: 10000;
+    border: 1px solid;
+    height: 60px;
+    background-color: black;
+    
+}
+header .nav{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    font-size: 30px;
+    padding-top: 10px;
+}
+header .nav h3{
+    color:white;
+}
+
+header .nav h3 span{
+    color: orange;
+}
+
+header .nav .navbar{
+    letter-spacing: 1px;
+    margin-right: 80px;
+    color: white;
+}
+header .nav .navbar a{
+    text-decoration: none;
+    color: white;
+}
+header .nav a{
+    color: white;
+    text-decoration:none ;
+    margin-right: 20px;
+}
+header .nav a span{
+    color: orange;
+}
+
+fieldset{
+    margin-top: 100px;
+    /* background: url('./images/g-7.jpg'); */
+
+   
+}
+
+#div h5{
+    margin-top: 30px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+
+ /* Tooltip text */
+ .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 2px;
+    background-color: black;
+    color: #f4bb40;
+    
+    position: absolute;
+  top: 30px;
+  right: 10px;
+    z-index: 3;
+    font-size: 17px;
+    margin-right: 30px;
+  } 
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+ .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }  
+ 

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>memorypage</title>
+    <link rel="stylesheet" href="memorypage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="./images/travel-and-tourism.png" >
+</head>
+<body>
+<!-- header part -->
+
+    <header >
+        <nav class="nav">
+        <h3><span>My</span> trip<i class="fa-solid fa-plane fa-beat"></i></h3>
+        <a href="#" class="logo"><span>Save</span>memories</a>
+        <div class="navbar">
+            <a href="./homepage.html">Home</a>
+        </div>
+
+        <div class="navbar">
+            <div class="tooltip"><i class="fa-solid fa-right-from-bracket" id="login-btn" onclick="logout()" ></i><span class="tooltiptext">Logout</span></div>
+        </div>
+        <div class="navbar">
+            <div class="tooltip">  <i class="fa-solid fa-moon" id="dark-btn" onclick="darkmod()"></i> <span class="tooltiptext">Dark</span></div>
+        </div>
+    </nav>
+
+    </header>
+
+    <h3 class="message" id="typingeffect"></h3>
+
+    <!--memory-->
+    <section class="memory" id="memories">
+        <h1 class="heading">MyMemory</h1>
+    </section>
+    <div class="addmemory">
+        Tourname: <input type="text" id="tour" placeholder="   enter tourname">
+        <br><br>
+        <!-- description:<input type='text' id="des"> -->
+        Description:<textarea id="des" placeholder="  write description "></textarea>
+        <br><br>
+        Imagesrc: <input type="text" id="imgsrc" placeholder="  enter img src">
+        <br><br>
+        <button onclick="add()">Create</button>
+    </div>
+   
+
+
+    
+    
+    <div id="content">
+       
+
+    </div>
+
+    <!-- footer part -->
+    <br><br>
+    
+
+<section class="footer">
+
+    <div class="box-footer">
+        <div class="box3">
+            <h3 id="contact">Contact</h3>
+            <br>
+            <p> <a href="tel:+917847966576"> <i class="fa-solid fa-phone-volume"></i></a>
+                <a href="mailto:nchandan206@gmail.com"><i class="fa-solid fa-envelope"></i></a></p>
+        </div>
+        <div class="box3">
+            <h3>Dowload app</h3>
+            <br>
+            <p><i class="fa-solid fa-cart-arrow-down" style="color: rgb(235, 239, 236);"></i></p>
+        </div>
+        <div class="box3">
+            <h3>branch locations</h3>
+            <a href="#">india</a>
+            <a href="#">USA</a>
+            <a href="#">nepal</a>
+            <a href="#">bangladesh</a>
+        </div>
+        <div class="box3">
+            <h3>quick links</h3>
+            <a href="#">Home</a>
+            <a href="#">book</a>
+            <a href="#">packages</a>
+            <a href="#">services</a>
+            <a href="#">gallery</a>
+            <a href="#">review</a>
+            <a href="#">contact</a>
+        </div>
+        <div class="box3">
+            <h3>Social media </h3>
+            <a href="#">facebook</a>
+            <a href="#">instagram</a>
+            <a href="#">twitter</a>
+            <a href="#">linkedin</a>
+        </div>
+
+    </div>
+    <hr><hr>
+
+    <h1 class="credit"> Made by <span style="color:orange;"> CSR </span> | BOOKING.COM </h1>
+
+</section>
+
+<script src="./memorypage.js"></script>
+</body>
+</html>
+  
+   
