@@ -80,11 +80,18 @@ here is the my booking page where you can book different places and you can see 
 
 <h1>journal Page</h1>
 
+![Screenshot (417)](https://github.com/nchandan206/travel_tour/assets/138459225/5747d2ec-e6c8-4d8f-99b9-45105f5fffff)
+
+
+![Screenshot (419)](https://github.com/nchandan206/travel_tour/assets/138459225/23a589bd-1499-4936-af23-b482a74ed633)
 
 
 so here is our unique feature the journal page where you can add your old tour memory and here we have the functionality of deleting,edit and  update the images with title and description.
 
 <h1>History page</h1>
+
+![Screenshot (418)](https://github.com/nchandan206/travel_tour/assets/138459225/dc54284c-6297-4fc6-82b6-4f47b617bd8e)
+
 here the user can see his/her bill history with all details.
 
 
