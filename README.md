@@ -1,7 +1,7 @@
 # travel_tour
 <h1>project-title</h1><br>
 hello everyone,<br>
-I am Chandan Nakay the leader of our team "WANDERS HUB" with my teammates Subhashree Mohanty and Rakhi Priyadarshini.<br>
+I am Chandan Nayak the leader of our team "WANDERS HUB" with my teammates Subhashree Mohanty and Rakhi Priyadarshini.<br>
 Welcoming you all to the repository for our website!
 
 <h1>OUR ICON</h1>
