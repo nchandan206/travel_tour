@@ -4,7 +4,7 @@ hello everyone,<br>
 I am Chandan Nayak the leader of our team "WANDERS HUB" with my teammates Subhashree Mohanty and Rakhi Priyadarshini.<br>
 Welcoming you all to the repository for our website!
 
-<h1>OUR ICON</h1>
+<h1>App ICON</h1>
 
 ![Screenshot (382)](https://github.com/nchandan206/travel_tour/assets/138459225/3f91b58e-793f-48ca-9607-fabf4b0fda59)
 
